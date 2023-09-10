@@ -1,0 +1,45 @@
+---- Summary of optional ns-3 features:
+Build profile                 : debug
+Build directory               : /home/stas/source/ns-3.37/build
+Build version embedding       : OFF (not requested)
+BRITE Integration             : OFF (missing dependency)
+DES Metrics event collection  : OFF (not requested)
+DPDK NetDevice                : OFF (not requested)
+Emulation FdNetDevice         : ON
+Examples                      : OFF (not requested)
+File descriptor NetDevice     : ON
+GNU Scientific Library (GSL)  : ON
+GtkConfigStore                : ON
+LibXml2 support               : ON
+MPI Support                   : OFF (not requested)
+ns-3 Click Integration        : OFF (missing dependency)
+ns-3 OpenFlow Integration     : OFF (missing dependency)
+Netmap emulation FdNetDevice  : OFF (missing dependency)
+PyViz visualizer              : OFF (missing dependency)
+Python Bindings               : OFF (not requested)
+SQLite support                : ON
+Tap Bridge                    : ON
+Tap FdNetDevice               : ON
+Tests                         : OFF (not requested)
+
+
+Modules configured to be built:
+antenna                   aodv                      applications              
+bridge                    buildings                 config-store              
+core                      csma                      csma-layout               
+dsdv                      dsr                       energy                    
+fd-net-device             flow-monitor              internet                  
+internet-apps             lr-wpan                   lte                       
+mesh                      mobility                  netanim                   
+network                   nix-vector-routing        olsr                      
+point-to-point            point-to-point-layout     propagation               
+sixlowpan                 spectrum                  stats                     
+tap-bridge                topology-read             traffic-control           
+uan                       virtual-net-device        wave                      
+wifi                      wimax                     
+
+Modules that cannot be built:
+.vscode                   brite                     click                     
+mpi                       openflow                  test                      
+visualizer                
+

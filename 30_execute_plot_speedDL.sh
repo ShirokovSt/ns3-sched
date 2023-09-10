@@ -1,0 +1,10 @@
+#!/bin/bash
+cd plot
+	rm ../DlRlcStats1.txt ../DlRlcStats2.txt ../DlRlcStats3.txt ../DlRlcStatsRxMOD1.txt ../DlRlcStatsRxMOD2.txt ../DlRlcStatsRxMOD3.txt ../DlRlcStatsRxMOD1RxMODSUM.txt ../DlRlcStatsRxMOD2RxMODSUM.txt ../DlRlcStatsRxMOD3RxMODSUM.txt ../DlRlcStatsRxMOD4RxMODSUM.txt ../DlRlcStatsRxMOD5RxMODSUM.txt ../DlRlcStatsRxMOD6RxMODSUM.txt ../DlRlcStatsRxMOD7RxMODSUM.txt ../DlRlcStatsRxMOD8RxMODSUM.txt ../DlRlcStatsRxMOD9RxMODSUM.txt ../DlRlcStatsRxMOD10RxMODSUM.txt ../DlRlcStatsRxMOD11RxMODSUM.txt ../DlRlcStatsRxMOD12RxMODSUM.txt ../DlRlcStatsRxMOD13RxMODSUM.txt ../DlRlcStatsRxMOD14RxMODSUM.txt ../DlRlcStatsRxMOD15RxMODSUM.txt ../DlRlcStats4.txt ../DlRlcStats5.txt ../DlRlcStats6.txt ../DlRlcStats7.txt ../DlRlcStats8.txt ../DlRlcStats9.txt ../DlRlcStats10.txt ../DlRlcStats11.txt ../DlRlcStats12.txt ../DlRlcStats13.txt ../DlRlcStats14.txt ../DlRlcStats15.txt ../DlRlcStats16.txt ../DlRlcStats17.txt ../DlRlcStats18.txt ../DlRlcStats19.txt ../DlRlcStats20.txt ../DlRlcStats21.txt ../DlRlcStats22.txt ../DlRlcStats23.txt ../DlRlcStats24.txt ../DlRlcStats25.txt ../DlRlcStats26.txt ../DlRlcStats27.txt ../DlRlcStats28.txt ../DlRlcStats29.txt ../DlRlcStats30.txt
+	./plot_parser ../DlRlcStats.txt
+	./rlc_mod ../DlRlcStats.txt
+	./plot_parser ../DlMacStats.txt ../DlRlcStatsRxMOD.txt
+	./rlc_speed_mod_new ../DlRlcStatsRxMOD1.txt ../DlRlcStatsRxMOD2.txt ../DlRlcStatsRxMOD3.txt ../DlRlcStatsRxMOD4.txt ../DlRlcStatsRxMOD5.txt ../DlRlcStatsRxMOD6.txt ../DlRlcStatsRxMOD7.txt ../DlRlcStatsRxMOD8.txt ../DlRlcStatsRxMOD9.txt ../DlRlcStatsRxMOD10.txt ../DlRlcStatsRxMOD11.txt ../DlRlcStatsRxMOD12.txt ../DlRlcStatsRxMOD13.txt ../DlRlcStatsRxMOD14.txt ../DlRlcStatsRxMOD15.txt ../DlRlcStatsRxMOD16.txt ../DlRlcStatsRxMOD17.txt ../DlRlcStatsRxMOD18.txt ../DlRlcStatsRxMOD19.txt ../DlRlcStatsRxMOD20.txt ../DlRlcStatsRxMOD21.txt ../DlRlcStatsRxMOD22.txt ../DlRlcStatsRxMOD23.txt ../DlRlcStatsRxMOD24.txt ../DlRlcStatsRxMOD25.txt ../DlRlcStatsRxMOD26.txt ../DlRlcStatsRxMOD27.txt ../DlRlcStatsRxMOD28.txt ../DlRlcStatsRxMOD29.txt ../DlRlcStatsRxMOD30.txt
+	gnuplot -persist Dl_speed30.plt
+	gnuplot -persist Dl_speed_real30.plt
+	
